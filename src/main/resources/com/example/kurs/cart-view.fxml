@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.CartController">
+   <children>
+      <TableView fx:id="tableView" layoutY="71.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="nameProductColumn" prefWidth="269.0" text="Товар" />
+            <TableColumn fx:id="typeProductColumn" prefWidth="154.0" text="Тип товара" />
+          <TableColumn fx:id="countProductColumn" prefWidth="81.0" text="Количество" />
+            <TableColumn fx:id="priceProductColumn" prefWidth="95.0" text="Цена" />
+        </columns>
+      </TableView>
+      <Label layoutX="419.0" layoutY="296.0" text="Итоговая цена" />
+      <Button layoutX="522.0" layoutY="351.0" mnemonicParsing="false" onAction="#orderProduct" text="Заказать" />
+      <Label fx:id="finalPrice" alignment="CENTER" layoutX="522.0" layoutY="296.0" text="Цена" />
+      <Button layoutX="26.0" layoutY="351.0" mnemonicParsing="false" onAction="#toProdcutCards" text="Назад к продуктам" />
+   </children>
+</AnchorPane>

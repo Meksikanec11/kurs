@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.LoginController">
+   <children>
+      <Label fx:id="FIO" alignment="CENTER" layoutX="70.0" layoutY="96.0" text="FIO">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="Email" alignment="CENTER" layoutX="313.0" layoutY="96.0" text="E-mail">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="phoneNumber" alignment="CENTER" layoutX="473.0" layoutY="96.0" text="phone number">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button layoutX="82.0" layoutY="323.0" mnemonicParsing="false" onAction="#onProductButtonClick" text="К продуктам" />
+      <Label layoutX="377.0" layoutY="146.0" text="Мои заказы">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="nullOrder" layoutX="348.0" layoutY="240.0" text="Вы еще не заказывали" visible="false" />
+      <TableView fx:id="tableView" layoutX="240.0" layoutY="170.0" prefHeight="226.0" prefWidth="355.0">
+        <columns>
+          <TableColumn fx:id="numberOrderColomn" prefWidth="89.0" text="Номер заказа" />
+          <TableColumn fx:id="nameProductColomn" prefWidth="116.0" text="Продукт" />
+            <TableColumn fx:id="typeProductColomn" prefWidth="149.0" text="Тип продукта" />
+        </columns>
+      </TableView>
+      <Label layoutX="68.0" layoutY="70.0" text="ФИО" />
+      <Label layoutX="281.0" layoutY="70.0" text="Электронная почта" />
+      <Label layoutX="477.0" layoutY="70.0" text="номер телефона" />
+   </children>
+</AnchorPane>

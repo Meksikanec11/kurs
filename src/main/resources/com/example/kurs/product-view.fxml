@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.ProductCardController">
+   <children>
+      <Label fx:id="productLabel" layoutX="273.0" layoutY="14.0" text="Продукты" />
+      <TextField fx:id="findField" layoutX="109.0" layoutY="43.0" onKeyTyped="#onFindKeyTyped" prefHeight="25.0" prefWidth="228.0" />
+      <Button layoutX="368.0" layoutY="43.0" mnemonicParsing="false" onAction="#onFindKeyTyped" text="Поиск" />
+      <Label fx:id="nullProducts" layoutX="214.0" layoutY="115.0" text="Нет подходящих товаров" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="43.0" mnemonicParsing="false" text="Профиль" onAction="#back"/>
+   </children>
+</AnchorPane>

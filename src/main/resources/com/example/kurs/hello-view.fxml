@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.HelloController">
+   <children>
+      <Button fx:id="submitButton" layoutX="274.0" layoutY="265.0" mnemonicParsing="false" onAction="#loginButtonClick" text="Войти" AnchorPane.bottomAnchor="110.0" />
+      <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="200.0" />
+      <TextField fx:id="loginField" layoutX="226.0" layoutY="132.0" />
+      <CheckBox fx:id="pass_toggle" layoutX="226.0" layoutY="235.0" mnemonicParsing="false" onAction="#togglevisiblePassword" text="Посмотреть пароль" />
+      <TextField fx:id="passwordHidden" layoutX="226.0" layoutY="200.0" visible="false" />
+      <Label layoutX="283.0" layoutY="105.0" text="Логин" />
+      <Label layoutX="278.0" layoutY="174.0" text="Пароль" />
+      <Text fx:id="timer1" layoutX="173.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="До следующей попытки:" visible="false" />
+      <Text fx:id="timer2" layoutX="314.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="18.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.ProductController">
+   <children>
+      <Label fx:id="nameProduct" alignment="CENTER" layoutX="105.0" layoutY="131.0" text="nameProduct" />
+      <Label fx:id="typeProduct" alignment="CENTER" layoutX="438.0" layoutY="131.0" text="typeProduct" />
+      <Label fx:id="priceProduct" alignment="CENTER" layoutX="105.0" layoutY="268.0" text="priceProduct" />
+      <Label fx:id="amountProduct" alignment="CENTER" layoutX="450.0" layoutY="260.0" text="amount" />
+      <Button layoutX="115.0" layoutY="330.0" mnemonicParsing="false" onAction="#toProductCard" text="Назад" />
+      <Button alignment="CENTER" layoutX="421.0" layoutY="330.0" mnemonicParsing="false" onAction="#toOrderProduct" text="Заказать Товар" />
+      <Label fx:id="nameProduct1" alignment="CENTER" layoutX="87.0" layoutY="97.0" text="Название продукта" />
+      <Label fx:id="typeProduct1" alignment="CENTER" layoutX="434.0" layoutY="97.0" text="Тип продукта" />
+      <Label fx:id="priceProduct1" alignment="CENTER" layoutX="125.0" layoutY="232.0" text="Цена " />
+      <Label fx:id="amountProduct1" alignment="CENTER" layoutX="410.0" layoutY="232.0" text="Количество на складе" />
+   </children>
+</AnchorPane>
